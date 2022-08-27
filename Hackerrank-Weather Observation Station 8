@@ -10,3 +10,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 Solution:
 SELECT DISTINCT CITY FROM STATION WHERE REGEXP_LIKE(CITY, '^[aeiouAEIOU]') AND REGEXP_LIKE(CITY, '[aeiouAEIOU]$');
+
+ OR
+ 
+SELECT DISTINCT CITY FROM STATION WHERE CITY ~*'^(a|e|i|o|u)[a-z]\s + [a-z](a|e|i|o|u)$';
