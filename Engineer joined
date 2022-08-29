@@ -1,0 +1,66 @@
+Given 2 tables ENGINEER and DATA, query the sum of Count of all the engineers whose Type is FrontEnd.
+
+Note: The column ID is the same in both the tables.
+
+The description of the tables are given below:
+
+ENGINEER:
+
+Image
+
+DATA:
+
+Image
+
+ 
+
+NOTE : The output should contain one column by the name ‘A’
+
+Example :
+
+Solution:
+Given 2 tables ENGINEER and DATA, query the sum of Count of all the engineers whose Type is FrontEnd.
+
+Note: The column ID is the same in both the tables.
+
+The description of the tables are given below:
+
+ENGINEER:
+
+Image
+
+DATA:
+
+Image
+
+ 
+
+NOTE : The output should contain one column by the name ‘A’
+
+Example :
+
+Given 2 tables ENGINEER and DATA, query the sum of Count of all the engineers whose Type is FrontEnd.
+
+Note: The column ID is the same in both the tables.
+
+The description of the tables are given below:
+
+ENGINEER:
+
+Image
+
+DATA:
+
+Image
+
+ 
+
+NOTE : The output should contain one column by the name ‘A’
+
+Example :
+
+SELECT SUM(a.COUNT)
+FROM ENGINEER AS a
+INNER JOIN DATA AS b
+
+ON a.ID = b.ID
